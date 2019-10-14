@@ -6,7 +6,9 @@ _This programm was created for the second semester class Discrete mathematics_
 
 > #### Description of project
 >
->>Write a program that accepts an integer as a physical number and prints, if any, an Euler circle for the graph Kn.
+>>Write a program that accepts as an input a permutation in a list format from natural numbers separated by the space character (eg 7 10 9 11 2 1 3 5 6 8 4) and prints the permutation rank in the lexicographic order of all same length permutations.
+>
+>>Second exercise is to write a program that accepts two integers n and k as inputs and prints the permutation of [n] which is at position k in the lexicographic order of all its permutations of [n].
 
 > #### About this project
 >
