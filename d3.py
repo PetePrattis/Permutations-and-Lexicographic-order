@@ -1,14 +1,16 @@
 # ! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import random
+#Author Παναγιώτης Πράττης/Panagiotis Prattis
 
 '''
-Π15120 Παναγιώτης Πράττης
-Η εργασία δημιουργεί μια μετάθεση η οποία έχει τυχαίο μήκος n, κάνοντας ανακάτεμα
-μια λίστας με αριθμούς απο 1 έως n και στην συνέχεια υπολογίζει και εμφανίζει
-το rank της μετάθεσης στην λεξικογραφική διάταξη
+A program that accepts as an input a permutation in a list format from natural numbers 
+separated by the space character (eg 7 10 9 11 2 1 3 5 6 8 4) 
+and prints the permutation rank in the lexicographic order of all same length permutations.
 '''
+
+import random
+
 
 def factorial(number):
     if (number == 0):
@@ -22,20 +24,19 @@ def factorial(number):
         return f
 
 
-
 #Main
-print("Θα δημιουργηθεί μια μετάθεση τυχαίου μήκους.")
+print("A random length permutation will be created.")
 m1=[]
 m2=[]
 
 l = random.randint(5,15)
-print("Το μήκος της μετάθεσης ειναι: ", l)
+print("Permutation's length is: ", l)
 for i in range(l):
     m1.append(i+1)
     m2.append(i+1)
   
 random.shuffle(m2)
-print("Η μετάθεση είναι η εξής:")
+print("Permutation is this:")
 print(m1)
 print(m2)
 
@@ -56,10 +57,10 @@ for i in range(0,l):
     rank = rank + a[i]*factorial(f-1)
     f = f - 1
 
-print("Προηγούνται της μετάθεσης τόσες μεταθέσεις:")
+print("There are so many permutations preceding the permutation:")
 print(rank)
 
-print("Το rank της μετάθεσης στην λεξικογραφική διάταξη είναι:")
+print("The rank of the permutation in the lexicographic order is:")
 print(rank + 1)
 
     
