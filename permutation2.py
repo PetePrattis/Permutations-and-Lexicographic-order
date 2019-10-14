@@ -1,10 +1,11 @@
 # ! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
+#Author Παναγιώτης Πράττης/Panagiotis Prattis
+
 '''
-Π15120 Παναγιώτης Πράττης
-Η εργασία δέχεται ως είσοδο δυο αριθμούς  n, k και εκτυπώνει
-την μετάθεση μ του [n] η οποία έχει rank τον αριθμό k
+A program that accepts two integers n and k as inputs and prints the permutation of [n] 
+which is at position k in the lexicographic order of all its permutations of [n].
 '''
 
 def factorial(number):
@@ -25,14 +26,14 @@ m=[]
 m1=[]
 m2=[]
 
-n = int(input ("Δώσε αριθμό μήκους μετάθεσης: "))
+n = int(input ("Give number for permutation length: "))
 print(n)
 
 for i in range(n):
     m.append(i+1)
     m1.append(i+1)
    
-k = int(input ("Δώσε rank μετάθεσης: "))
+k = int(input ("Give permutation's rank: "))
 print(k)
 
 while m:
@@ -41,7 +42,7 @@ while m:
     m2.append(m.pop(idx))
 assert k == 0 
 
-print("Η μετάθεση είναι η εξής:")
+print("The permutation is this:")
 print(m1)
 print(m2)
 
